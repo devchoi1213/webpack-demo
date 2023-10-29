@@ -2,14 +2,16 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+	mode: 'development',
 	entry: {
 		index: './src/index.js',
 		print: './src/print.js',
 	},
+	devtool: 'inline-source-map',
 	// index.html 파일을 output 폴더에 생성 (모든 번들이 자동으로 추가)
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Output Management',
+			title: 'Development',
 		}),
 	],
 	output: {
