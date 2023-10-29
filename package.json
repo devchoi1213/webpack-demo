@@ -5,6 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    // webpack이 디펜던시 그래프 내의 모든 파일에서의 변경사항을 "감시"
+    // 단점은 변경사항을 확인하려면 브라우저를 새로 고침해야 한다
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "keywords": [],
